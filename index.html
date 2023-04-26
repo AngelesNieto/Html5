@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+     <meta name="author" content="Angeles Nieto Amuy">
+    <meta name="description" content="Ejercicio API's en HTML5<">
+
+	<!--=============== css  ===============-->
+	
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+   
+   <link rel="stylesheet" type="text/css" href="css/index.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<title>Ejercicio API's en HTML5</title>
+</head>
+<body>
+	<div id="main-div" class="content-wrapper">
+          <div id=principal-div>
+        <h1 class="select-title">Selecciona el vídeo que quieras reproducir</h1>
+        <label for="file"></label>
+        <input type="file" class="select-video" id="file" name="file" accept="video/*">
+        </div>
+        <output id="video-output"></output>
+        <div id="carga-div" class="spinner-border text-light" role="status" style="visibility: hidden;">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div id="controls-div" class="controls">
+            <button class="buttons" id="play"  title="Reproducir" aria-label="Reproducir">
+                <i class="bi bi-play-fill" role="button" aria-label="Reproducir"></i>
+            </button>
+            <button class="buttons" id="pause"  title="Pausa" aria-label="Pausa">
+                <i class="bi bi-pause-fill" role="button" aria-label="Pausar"></i>
+            </button>
+            <button class="buttons" id="up"  title="Subir volumen" aria-label="Subir volumen">
+                <i class="bi bi-volume-up-fill" role="button" aria-label="Subir volumen"></i>
+            </button>
+            <button class="buttons" id="down"  title="Bajar volumen" aria-label="Bajar volumen">
+                <i class="bi bi-volume-down-fill" role="button" aria-label="Bajar volumen"></i>
+            </button>
+        </div>
+    </div>
+
+	<script type="text/javascript" src="js/index.js"></script>
+</html>
